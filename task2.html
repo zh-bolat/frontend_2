@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 2 — Grid Layout</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-logo">CSS <span>Assignment</span></div>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="task0.html">Task 0</a></li>
+      <li><a href="task1.html">Task 1</a></li>
+      <li><a href="task2.html" class="active">Task 2</a></li>
+      <li><a href="task3.html">Task 3</a></li>
+      <li><a href="task4.html">Task 4</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="page-container">
+    <h1 class="section-title">Task 2: Page Layout with Grid Areas</h1>
+    <p class="section-desc">
+      A complete page layout using CSS Grid with <code>grid-template-areas</code>.
+      The header spans the top, the sidebar is on the left, the main content is on the right,
+      and the footer spans the bottom.
+    </p>
+
+    <!-- Grid Layout Demo -->
+    <div class="grid-layout">
+      <!-- Header -->
+      <header class="grid-header">
+        <h2>Dashboard</h2>
+        <p>Welcome back! Here's an overview of your workspace.</p>
+      </header>
+
+      <!-- Sidebar -->
+      <aside class="grid-sidebar">
+        <h3>Navigation</h3>
+        <ul>
+          <li class="active-item">📊 Dashboard</li>
+          <li>📈 Analytics</li>
+          <li>👥 Users</li>
+          <li>⚙️ Settings</li>
+          <li>👤 Profile</li>
+          <li>❓ Help</li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <section class="grid-main">
+        <h2>Main Content Area</h2>
+        <p>
+          This is the main content area of the grid layout. It occupies the right side of the page,
+          next to the sidebar. The layout is built entirely with CSS Grid using named grid areas.
+        </p>
+        <p>
+          CSS Grid makes it incredibly easy to create complex two-dimensional layouts. By defining
+          <code>grid-template-areas</code>, we can visually describe the layout structure directly
+          in our CSS code, making the layout both intuitive and maintainable.
+        </p>
+        <p>
+          The grid container uses <code>grid-template-columns: 240px 1fr</code> to give the sidebar
+          a fixed width while the main content takes up the remaining space. The rows are defined
+          with <code>grid-template-rows: auto 1fr auto</code> so that the header and footer size
+          to their content while the middle row expands to fill available space.
+        </p>
+
+        <div style="display:flex; gap:1rem; margin-top:1.5rem; flex-wrap:wrap;">
+          <div style="flex:1; min-width:200px; background:#ebf5fb; padding:1rem; border-radius:8px;">
+            <h4 style="color:#2c3e50; margin-bottom:0.5rem;">📄 Projects</h4>
+            <p style="font-size:0.9rem;">12 active projects in your workspace.</p>
+          </div>
+          <div style="flex:1; min-width:200px; background:#fdebd0; padding:1rem; border-radius:8px;">
+            <h4 style="color:#2c3e50; margin-bottom:0.5rem;">✅ Tasks</h4>
+            <p style="font-size:0.9rem;">48 tasks completed this week.</p>
+          </div>
+          <div style="flex:1; min-width:200px; background:#d5f5e3; padding:1rem; border-radius:8px;">
+            <h4 style="color:#2c3e50; margin-bottom:0.5rem;">👥 Team</h4>
+            <p style="font-size:0.9rem;">8 team members online now.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="grid-footer">
+        <p>&copy; 2025 Dashboard App. Built with CSS Grid.</p>
+      </footer>
+    </div>
+  </main>
+
+  <!-- Page Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 CSS Assignment. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

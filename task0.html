@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 0 — Navigation Bar</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-logo">CSS <span>Assignment</span></div>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="task0.html" class="active">Task 0</a></li>
+      <li><a href="task1.html">Task 1</a></li>
+      <li><a href="task2.html">Task 2</a></li>
+      <li><a href="task3.html">Task 3</a></li>
+      <li><a href="task4.html">Task 4</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="page-container">
+    <h1 class="section-title">Task 0: Navigation Bar</h1>
+    <p class="section-desc">
+      This task demonstrates a Flexbox-based navigation bar with the logo aligned to the left
+      and navigation links to the right. All items are vertically centered using <code>align-items: center</code>.
+    </p>
+
+    <h2 style="color:#2c3e50; margin-bottom:1rem;">How it works</h2>
+    <ul style="color:#555; margin-bottom:2rem; padding-left:1.5rem;">
+      <li>The header container uses <code>display: flex</code></li>
+      <li><code>justify-content: space-between</code> places the logo on the left and links on the right</li>
+      <li><code>align-items: center</code> vertically centers all items</li>
+      <li><code>gap</code> applies consistent spacing between links</li>
+    </ul>
+
+    <h2 style="color:#2c3e50; margin-bottom:1rem;">Demo Navigation Bar</h2>
+
+    <!-- Demo Navbar 1: Dark -->
+    <nav class="demo-navbar">
+      <div class="demo-logo">🚀 My Brand</div>
+      <ul class="demo-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Demo Navbar 2: Light -->
+    <nav class="demo-navbar" style="background:#ecf0f1; margin-top:1rem;">
+      <div class="demo-logo" style="color:#2c3e50;">🎨 Creative Studio</div>
+      <ul class="demo-links">
+        <li><a href="#" style="color:#2c3e50;">Home</a></li>
+        <li><a href="#" style="color:#2c3e50;">Gallery</a></li>
+        <li><a href="#" style="color:#2c3e50;">Artists</a></li>
+        <li><a href="#" style="color:#2c3e50;">Blog</a></li>
+        <li><a href="#" style="color:#2c3e50;">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Demo Navbar 3: Gradient -->
+    <nav class="demo-navbar" style="background:linear-gradient(135deg, #667eea, #764ba2); margin-top:1rem;">
+      <div class="demo-logo">✨ Starter App</div>
+      <ul class="demo-links">
+        <li><a href="#" style="color:#fff;">Dashboard</a></li>
+        <li><a href="#" style="color:#fff;">Analytics</a></li>
+        <li><a href="#" style="color:#fff;">Settings</a></li>
+        <li><a href="#" style="color:#fff;">Profile</a></li>
+      </ul>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 CSS Assignment. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

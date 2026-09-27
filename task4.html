@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 4 — Portfolio Page</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar (Flexbox) -->
+  <nav class="navbar">
+    <div class="navbar-logo">CSS <span>Assignment</span></div>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="task0.html">Task 0</a></li>
+      <li><a href="task1.html">Task 1</a></li>
+      <li><a href="task2.html">Task 2</a></li>
+      <li><a href="task3.html">Task 3</a></li>
+      <li><a href="task4.html" class="active">Task 4</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="page-container">
+    <h1 class="section-title">Task 4: Portfolio Page</h1>
+    <p class="section-desc">
+      A portfolio page combining Flexbox (navigation, card content) and CSS Grid (page layout).
+      Projects are displayed on the left, and an info sidebar is on the right.
+    </p>
+
+    <div class="portfolio-grid">
+      <!-- Projects (Left - Grid area) -->
+      <section class="portfolio-projects">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <img src="https://picsum.photos/600/300?random=20" alt="E-Commerce Platform">
+          <div class="card-body">
+            <h3>E-Commerce Platform</h3>
+            <p>A full-featured online store with product catalog, shopping cart, user authentication, and payment integration. Built with modern web technologies.</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <img src="https://picsum.photos/600/300?random=21" alt="Weather Dashboard">
+          <div class="card-body">
+            <h3>Weather Dashboard</h3>
+            <p>Real-time weather application with interactive maps, 7-day forecasts, and location-based weather alerts. Integrates with multiple weather APIs.</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="project-card">
+          <img src="https://picsum.photos/600/300?random=22" alt="Social Media App">
+          <div class="card-body">
+            <h3>Social Media App</h3>
+            <p>A social networking platform with real-time messaging, photo sharing, news feed, and friend connections. Features responsive design for all devices.</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
+
+        <!-- Project Card 4 -->
+        <div class="project-card">
+          <img src="https://picsum.photos/600/300?random=23" alt="Task Manager">
+          <div class="card-body">
+            <h3>Task Manager</h3>
+            <p>A productivity tool for managing tasks and projects with drag-and-drop boards, team collaboration features, and deadline tracking.</p>
+            <a href="#" class="btn">View Project</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sidebar (Right - Grid area) -->
+      <aside class="portfolio-sidebar">
+        <!-- About Me -->
+        <div class="sidebar-section">
+          <h3>About Me</h3>
+          <p>
+            Hi! I'm a passionate web developer with a love for clean, modern design and
+            efficient code. I specialize in front-end development using HTML, CSS, and JavaScript.
+          </p>
+        </div>
+
+        <!-- Skills -->
+        <div class="sidebar-section">
+          <h3>Skills</h3>
+          <div>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Flexbox</span>
+            <span class="skill-tag">CSS Grid</span>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="sidebar-section">
+          <h3>Contact</h3>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> student@example.com</li>
+            <li><strong>GitHub:</strong> github.com/student</li>
+            <li><strong>LinkedIn:</strong> linkedin.com/in/student</li>
+            <li><strong>Location:</strong> Astana, Kazakhstan</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer (spans full width) -->
+  <footer class="footer">
+    <p>&copy; 2025 CSS Assignment. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
